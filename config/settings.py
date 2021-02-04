@@ -25,7 +25,11 @@ SECRET_KEY = 'ry0_xs+snglc7cj4i!*e&9c%2y%efc6#p+8f-o+=j9i1cidbn('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# The ALLOWED_HOSTS63 setting represents which host/domain names our Django site can
+# serve. This is a security measure to prevent HTTP Host header attacks, which are possible even
+# under many seemingly-safe web server configurations. For now, we’ll use the wildcard asterisk,
+# *, which means all domains are acceptable.
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
