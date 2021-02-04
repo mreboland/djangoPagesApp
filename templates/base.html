@@ -1,0 +1,14 @@
+<header>
+    <a href="{% url 'home' %}">Home</a> |
+    <a href="{% url 'about' %}">About</a>
+</header>
+
+{% comment %} Here we've added a 'block' tag called content. Blocks can be overwritten by child templates via inheritance. It's optional to name our closing endblock, we use endblock content for readability which is especially important in larger apps. {% endcomment %}
+{% block content %}
+{% endblock content %}
+
+
+{% comment %} Not a part of the lessong, just testing to see how a footer would work {% endcomment %}
+<footer>
+    <p>This is a footer</p>
+</footer>
